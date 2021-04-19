@@ -1,0 +1,16 @@
+services:
+  details-dev:
+    build: .
+    image: ghcr.io/chicky0/bookinfo-details:dev
+    ports:
+      - "8080:8080"
+  details-uat:
+    build: .
+    image: ghcr.io/chicky0/bookinfo-details:uat
+    ports:
+      - "8080:8080"
+  details-prd:
+    build: .
+    image: ghcr.io/chicky0/bookinfo-details:prd
+    ports:
+      - "8080:8080"
